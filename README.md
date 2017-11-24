@@ -6,7 +6,7 @@ This plugin was created referencing the [Fingerprint Auth project](https://githu
 
 # Installation
 ### Cordova
-`cordova plugin add cordova-plugin-android-fingerprint`
+`Not published yet. Can be installed manually by downloading.
 
 # How to use
 - Call `isAvailable()` to check the fingerprint status.
