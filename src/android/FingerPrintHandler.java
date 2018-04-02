@@ -37,7 +37,7 @@ public class FingerPrintHandler extends FingerprintManager.AuthenticationCallbac
 
     }
 
-    public void stopListening() {
+    public void stopAuthentication() {
         if (mCancellationSignal != null) {
             mSelfCancelled = true;
             mCancellationSignal.cancel();
