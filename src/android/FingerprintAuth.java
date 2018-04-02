@@ -351,10 +351,15 @@ public class FingerprintAuth extends CordovaPlugin {
           }
           return true;
         }
-        case STOP:
+        case STOP: {
           onCancelled();
           mFingerPrintHelper.stopAuthentication();
+          Log.e(TAG, "Fingerprint authentication not available");
+          mPluginResult = new PluginResult(PluginResult.Status.OK);
+          mCallbackContext.success();
+          mCallbackContext.sendPluginResult(mPluginResult);
           return true;
+        }
       }
     }
     return false;
